@@ -7,6 +7,10 @@ The project involved the implementation of the object detection algorithm Yolo d
 ![](./Results/2.png)     ![](./Results/2_mask.png)
 ![](./Results/3.png)     ![](./Results/3_mask.png) -->
 
+
+| <img src="./Results/All predictions.png" alt="" style="width: 400px;"/> |
+| Here I am |
+
 <p float="left">
   <img src="./Results/All predictions.png" width = 80%/>
   <em>Neural network output</em>
