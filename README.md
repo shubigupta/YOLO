@@ -1,6 +1,6 @@
-# Segmenting Objects by Location PyTorch Implementation
+# You Only Look Once (YOLO): Pytorch Implementation
 
-The project involved the implementation of the instance segmentation algorithm defined in paper: [SOLO](https://arxiv.org/abs/1912.04488). The main idea behind the paper is that different instance categories can be differentiated by their location and size in an image. The image is divided into SxS grids. Each grid cell is responsible for locating the instance's center which falls in the pixels it corresponds to in the original image. Size is handled by detecting at different levels of Feature Pyramid Network.
+The project involved the implementation of the object detection algorithm Yolo defined in the paper: [YOLO](https://arxiv.org/pdf/1506.02640.pdf). YOLO poses the object detection problem as regression problem and uses a single neural network to predict bounding boxes and class probabilities directly from full images in one evaluation.
 
 ## Results
 <!--![](./Results/1.png)     ![](./Results/1_mask.png)
@@ -8,8 +8,8 @@ The project involved the implementation of the instance segmentation algorithm d
 ![](./Results/3.png)     ![](./Results/3_mask.png) -->
 
 <p float="left">
-  <img src="./Results/1.png" width = 40%/>
-  <img src="./Results/1_mask.png" width = 40%/> 
+  <img src="./Results/All predictions.png" width = 40%/>
+  <img src="./Results/Low Confidence boxes suppressed.png" width = 40%/>
 </p>
 <p float="left">
   <img src="./Results/2.png" width = 40%/>
