@@ -12,6 +12,9 @@ The project involved the implementation of the object detection algorithm Yolo d
   <img src="./Results/All predictions.png" alt="" width="300">
   <br>
     <em>caption</em>
+  <img src="./Results/All predictions.png" width = 80%/>
+  <br>
+  <em>Neural network output</em>
 </p>
 
 
