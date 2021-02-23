@@ -21,16 +21,17 @@ The project involved the implementation of the object detection algorithm Yolo d
   </tr>
 </table>
 
+<table>
+  <tr>
+      <td align = "center"> <img src="./Results/6. Confidence error.png"> </td>
+      <td align = "center"> <img src="./Results/7. Localisation and classification error.png"> </td>
+  </tr>
+  <tr>
+      <td align = "center"> Confidence error </td>
+      <td align = "center"> Localisation and Classification error </td>
+  </tr>
+</table>
 
-
-<p float="left">
-  <img src="./Results/2.png" width = 40%/>
-  <img src="./Results/2_mask.png" width = 40%/> 
-</p>
-<p float="left">
-  <img src="./Results/3.png" width = 40%/>
-  <img src="./Results/3_mask.png" width = 40%/> 
-</p>
 
 ## Hyperparameters
 * Focal Loss
