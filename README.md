@@ -11,11 +11,13 @@ The project involved the implementation of the object detection algorithm Yolo d
 <table>
   <tr>
       <td align = "center"> <img src="./Results/1. Bounding box before elimination"> </td>
-      <td align = "center"> <img src="./Results/1. Bounding box before elimination"> </td>
+      <td align = "center"> <img src="./Results/2. Bounding box after suppressing low confidence.png"> </td>
+      <td align = "center"> <img src="./Results/3. Bounding box after non-max suppression.png"> </td>
   </tr>
   <tr>
-      <td align = "center"> caption1 </td>
-      <td align = "center"> caption2 </td>
+      <td align = "center"> Predictions from the network </td>
+      <td align = "center"> Suppressing low confidence boxes </td>
+      <td align = "center"> Boxes after non-max suppression </td>
   </tr>
 </table>
 
