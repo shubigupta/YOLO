@@ -6,7 +6,7 @@ The project involved the implementation of the object detection algorithm Yolo d
 <p align="center">
   <img src="./Results/Network architecture.png">
   <br />
-  <b>Network Architecture</b>
+  **Network Architecture**
 </p>
 
 ## Results
