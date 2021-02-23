@@ -8,8 +8,8 @@ The project involved the implementation of the object detection algorithm Yolo d
 ![](./Results/3.png)     ![](./Results/3_mask.png) -->
 
 
-| <img src="./Results/All predictions.png" alt="" style="width: 400px;"/> |
-| Here I am |
+<img src="./Results/All predictions.png" alt=""/>
+*Fig. 2:*
 
 <p float="left">
   <img src="./Results/All predictions.png" width = 80%/>
