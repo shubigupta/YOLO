@@ -47,28 +47,23 @@ The project involved the implementation of the object detection algorithm Yolo d
   </tr>
 </table>
 
-## Hyperparameters
-* Focal Loss
-    * alpha = 0.25, gamma = 2
-* Mask Loss weight : 3
-* Category Threshold:  0.2
-* INS Threshold         : 0.5
-* IoU Threshold         : 0.3 
-* Learning rate           : 0.01 , 0.001 @epoch28, 0.0001 @epoch 34
-* Momentum              : 0.9
-* Weight Decay          : 0.0001
-* Num Epochs            : 40
+## Issues faced
+One major issue I faced while implementing this project was to get the model to detect traffic lights.The dataset is imbalanced with 37000 instances of cars, 16000 instances of pedestrians and only 2800 instances of traffic lights. On top of that, the bounding boxes for traffic lights are quite small in dataset. 
 
-## Loss Plots
-<p float="left">
-  <img src="./Results/Dice_loss.png" width = 40%/>
-  <img src="./Results/Focal_loss.png" width = 40%/> 
-</p>
-<p float="center">
-  <img src="./Results/Total_loss.png" width = 40%/>
-</p>
+In my understanding, in the initial stages it is hard for the predicted boxes to have high IoU with the ground truth boxes. The confidence loss aims to reduce the gap between the confidence and IoU. So in the initial stages, maybe the network learns that if it’s a traffic light, it should have low confidence.
 
-## Precision vs Recall plot
-<p float="center">
-  <img src="./Results/download.png" width = 40%/>
-</p>
+Ideally, this should be fixed by the localization optimization as the network trains on. But in this case, the dataset for traffic lights is quite small so the network localization optimization may not be getting enough training instances to correct the localization to an extent where
+the IoU is greater than 0.6. 
+
+The failure of network to detect traffic lights is also shown by the average precision values of the 3 classes:
+1. Pedestrian: 0.289
+2. Traffic light: 0.034
+3. Car: 0.533
+The network works much better when the rather than using IoU, a target of 1 is used in confidence loss. The precision values for this case are:
+1. Pedestrian: 0.389
+2. Traffic light: 0.438
+3. Car: 0.558
+Another observation: Different losses converge at different rate. This is shown in Figure 7
+and 8 on next page. The confidence loss decrease slowly and results in a lower level than
+other losses. Maybe the network will work better if rather than using a single optimizer on
+the sum, four different optimizers are used to optimize the losses individually.
