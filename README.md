@@ -14,8 +14,8 @@ The project involved the implementation of the object detection algorithm Yolo d
       <td> <img src="./Results/Low Confidence boxes suppressed.png" width = 80%/> </td>
   </tr>
   <tr>
-      <td> <img src="./Results/Low Confidence boxes suppressed.png" width = 80%/> </td>
-      <td> <img src="./Results/Low Confidence boxes suppressed.png" width = 80%/> </td>
+      <td> caption1 </td>
+      <td> caption2 </td>
   </tr>
 </table>
 
