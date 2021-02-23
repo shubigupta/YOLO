@@ -10,8 +10,8 @@ The project involved the implementation of the object detection algorithm Yolo d
 
 <table>
   <tr>
-      <td> <img src="./Results/Low Confidence boxes suppressed.png" width = 80%/ align = "center"> </td>
-      <td> <img src="./Results/Low Confidence boxes suppressed.png" width = 80%/ align = "center"> </td>
+      <td> <img src="./Results/Low Confidence boxes suppressed.png" align = "center"> </td>
+      <td> <img src="./Results/Low Confidence boxes suppressed.png" align = "center"> </td>
   </tr>
   <tr>
       <td> caption1 </td>
