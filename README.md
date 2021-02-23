@@ -48,22 +48,19 @@ The project involved the implementation of the object detection algorithm Yolo d
 </table>
 
 ## Issues faced
-One major issue I faced while implementing this project was to get the model to detect traffic lights.The dataset is imbalanced with 37000 instances of cars, 16000 instances of pedestrians and only 2800 instances of traffic lights. On top of that, the bounding boxes for traffic lights are quite small in dataset. 
+One major issue I faced while implementing this project was to get the model to detect traffic lights.The dataset is imbalanced with 37000 instances of cars, 16000 instances of pedestrians and only 2800 instances of traffic lights. On top of that, the bounding boxes for traffic lights are quite small in dataset.
 
-In my understanding, in the initial stages it is hard for the predicted boxes to have high IoU with the ground truth boxes. The confidence loss aims to reduce the gap between the confidence and IoU. So in the initial stages, maybe the network learns that if it’s a traffic light, it should have low confidence.
+Thus, in the initial stages it is hard for the predicted boxes to have high IoU with the ground truth boxes. The confidence loss aims to reduce the gap between the predicted confidence and IoU.
 
 Ideally, this should be fixed by the localization optimization as the network trains on. But in this case, the dataset for traffic lights is quite small so the network localization optimization may not be getting enough training instances to correct the localization to an extent where
-the IoU is greater than 0.6. 
+the IoU is greater than the threshold. 
 
 The failure of network to detect traffic lights is also shown by the average precision values of the 3 classes:
 1. Pedestrian: 0.289
 2. Traffic light: 0.034
 3. Car: 0.533
+
 The network works much better when the rather than using IoU, a target of 1 is used in confidence loss. The precision values for this case are:
 1. Pedestrian: 0.389
 2. Traffic light: 0.438
 3. Car: 0.558
-Another observation: Different losses converge at different rate. This is shown in Figure 7
-and 8 on next page. The confidence loss decrease slowly and results in a lower level than
-other losses. Maybe the network will work better if rather than using a single optimizer on
-the sum, four different optimizers are used to optimize the losses individually.
