@@ -32,6 +32,16 @@ The project involved the implementation of the object detection algorithm Yolo d
   </tr>
 </table>
 
+<table>
+  <tr>
+      <td align = "center"> <img src="./Results/4. Precision recall curve.png"> </td>
+      <td align = "center"> <img src="./Results/5. MAP over training epochs.png"> </td>
+  </tr>
+  <tr>
+      <td align = "center"> Precision-Recall curves over the three classes</td>
+      <td align = "center"> Mean Average Precision over training epochs</td>
+  </tr>
+</table>
 
 ## Hyperparameters
 * Focal Loss
