@@ -2,6 +2,12 @@
 
 The project involved the implementation of the object detection algorithm Yolo defined in the paper: [YOLO](https://arxiv.org/pdf/1506.02640.pdf). YOLO poses the object detection problem as regression problem and uses a single neural network to predict bounding boxes and class probabilities directly from full images in one evaluation.
 
+## Network Architecture
+<p align="center">
+  <img src="./Results/Network architecture.png" width = 40%/>
+  Network Architecture
+</p>
+
 ## Results
 <!--![](./Results/1.png)     ![](./Results/1_mask.png)
 ![](./Results/2.png)     ![](./Results/2_mask.png)
