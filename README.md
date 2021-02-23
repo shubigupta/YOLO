@@ -14,7 +14,7 @@ The project involved the implementation of the object detection algorithm Yolo d
       <td> <img src="./Results/Low Confidence boxes suppressed.png" align = "center"> </td>
   </tr>
   <tr>
-      <td> caption1 </td>
+      <td align = "center"> caption1 </td>
       <td> caption2 </td>
   </tr>
 </table>
