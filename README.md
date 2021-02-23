@@ -8,11 +8,11 @@ The project involved the implementation of the object detection algorithm Yolo d
 ![](./Results/3.png)     ![](./Results/3_mask.png) -->
 
 
-<p align="center">
+<p align="left">
   <img src="./Results/All predictions.png" alt="" width="300">
   <br>
     <em>caption</em>
-  <img src="./Results/All predictions.png" width = 80%/>
+  <img src="./Results/All predictions.png" width ="300" />
   <br>
   <em>Neural network output</em>
 </p>
